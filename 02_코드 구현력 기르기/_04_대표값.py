@@ -2,7 +2,10 @@ import sys
 sys.stdin = open("input.txt", "r")
 n = int(input())
 a = list(map(int, input().split()))
-ave = round(sum(a)/n)
+# ave = round(sum(a)/n) # 파이썬의 round는 round_half_even 방식을 택하기 때문에 0.5를 더하는 방식을 사용한다.
+ave=sum(a)/n
+ave=ave+0.5
+ave=int(ave)
 min = 2147000000
 
 for idx, x in enumerate(a):
