@@ -14,13 +14,14 @@ def Count(capacity):
 
 n, m = map(int, input().split())
 Music = list(map(int, input().split()))
+maxx = max(Music) # 가장 긴 용량의 노래는 담을 수 있도록
 lt = 1
 rt = sum(Music)
 res = 0
 
 while lt <= rt:
     mid = (lt + rt) // 2
-    if Count(mid) <= m:
+    if mid >= maxx and Count(mid) <= m:
         res = mid
         rt = mid - 1
     else:
