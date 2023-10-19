@@ -3,8 +3,12 @@ sys.stdin = open("input.txt", "rt")
 input = sys.stdin.readline
 
 def DFS(L):
+    global cnt
     if L == m:
-
+        for j in range(m):
+            print(res[j], end=' ')
+        print()
+        cnt += 1
     else:
         for i in range(1, n + 1):
             res[L] = i
