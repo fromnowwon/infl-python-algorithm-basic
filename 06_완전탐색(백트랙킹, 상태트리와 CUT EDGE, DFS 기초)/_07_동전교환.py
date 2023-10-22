@@ -2,6 +2,8 @@ import sys
 sys.stdin = open("input.txt", "r")
 def DFS(L, sum):
     global res
+    if L > res:
+        return
     if sum > m:
         return
     if sum == m:
