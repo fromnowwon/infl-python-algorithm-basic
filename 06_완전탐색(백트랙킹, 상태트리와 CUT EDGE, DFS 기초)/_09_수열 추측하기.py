@@ -10,3 +10,6 @@ if __name__ == "__main__":
 
     for i in range(1, n):
         b[i] = b[i - 1] * (n - 1) // i
+
+    for x in b:
+        print(x, end=' ')
