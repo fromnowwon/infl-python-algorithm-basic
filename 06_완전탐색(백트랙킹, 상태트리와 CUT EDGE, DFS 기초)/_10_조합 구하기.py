@@ -8,6 +8,10 @@ def DFS(L, s):
             print(res[j], end=' ')
         cnt += 1
         print()
+    else:
+        for i in range(s, n + 1):
+            res[L] = i
+            DFS(L + 1, i + 1)
 
 if __name__ == "__main__":
     n, m = map(int, input().split())
