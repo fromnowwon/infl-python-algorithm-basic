@@ -10,6 +10,6 @@ for i in range(1, n):
 a = list(range(1, n + 1))
 
 for tmp in it.permutations(a, 3):
-    print(tmp)
-    cnt += 1
-print(cnt)
+    sum = 0
+    for L, x in enumerate(tmp):
+        sum += (x * b[L])
