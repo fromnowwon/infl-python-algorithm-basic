@@ -10,3 +10,5 @@ if __name__ == "__main__":
     for i in range(m):
         a, b = map(int, input().split())
         g[a][b] = 1
+    cnt = 0
+    ch[1] = 1
