@@ -2,6 +2,8 @@ import sys
 sys.stdin = open("input.txt", "rt")
 def DFS(L, sum, time):
     global res
+    if time > m:
+        return
     if L == n:
         if sum > res:
             res = sum
@@ -21,3 +23,4 @@ if __name__ == "__main__":
 
     res = -2147000000
     DFS(0, 0, 0)
+    print(res)
