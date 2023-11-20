@@ -3,7 +3,9 @@ sys.stdin = open("input.txt", "rt")
 
 def DFS(L, sum):
     global res
-
+    if L == n + 1:
+        if sum > res:
+            res = sum
 
 if __name__ == "__main__":
     n = int(input())
