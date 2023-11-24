@@ -1,9 +1,19 @@
 import sys
 sys.stdin = open("input.txt", "rt")
 
+def DFS(L, sum):
+    global res
+    if L == n:
+
+    else:
+        DFS(L+1, sum+G[L])
+        DFS(L+1, sum-G[L])
+        DFS(L+1, sum)
+
 
 if __name__ == "__main__":
     n = int(input())
     G = list(map(int, input().split()))
     s = sum(G)
     res = set()
+    DFS(0, 0)
