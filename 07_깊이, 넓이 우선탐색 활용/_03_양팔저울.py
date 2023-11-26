@@ -18,3 +18,4 @@ if __name__ == "__main__":
     s = sum(G)
     res = set()
     DFS(0, 0)
+    print(s - len(res))
