@@ -3,6 +3,8 @@ sys.stdin = open("input.txt", "rt")
 
 def DFS(L, sum):
     global cnt
+    if sum > T:
+        return
     if L == k:
         if sum == T:
             cnt += 1
