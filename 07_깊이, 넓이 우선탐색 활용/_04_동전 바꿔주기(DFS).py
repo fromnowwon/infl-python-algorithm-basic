@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open("input.txt", "rt")
 
+# 원래는 Knapsack 방식으로 풀어야 하지만, DFS 방식을 사용
 def DFS(L, sum):
     global cnt
     if sum > T:
