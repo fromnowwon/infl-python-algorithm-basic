@@ -4,11 +4,13 @@ sys.stdin = open("input.txt", "rt")
 def DFS(L):
     global res
     if L == n:
+        cha = max(money) - min(money)
 
     else:
         for i in range(3):
             money[i] += coin[L]
             DFS(L+1)
+            money[i] -= coin[L]
 
 
 if __name__ == "__main__":
