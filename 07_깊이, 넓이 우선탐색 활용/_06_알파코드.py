@@ -1,6 +1,9 @@
 import sys
 sys.stdin = open("input.txt", "rt")
 
+def DFS(L, P):
+    global cnt
+
 
 if __name__ == "__main__":
     code = list(map(int, input()))
@@ -8,3 +11,5 @@ if __name__ == "__main__":
     code.insert(n, -1)
     res = [0] * (n + 3)
     cnt = 0
+    DFS(0, 0)
+    print(cnt)
