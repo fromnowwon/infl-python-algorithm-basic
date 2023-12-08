@@ -3,6 +3,13 @@ sys.stdin = open("input.txt", "rt")
 
 def DFS(L, P):
     global cnt
+    if L == n:
+        cnt += 1
+
+    else:
+        for i in range(1, 27):
+            if code[L] == i:
+                res[P] = i
 
 
 if __name__ == "__main__":
