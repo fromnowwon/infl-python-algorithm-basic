@@ -5,7 +5,9 @@ def DFS(L, P):
     global cnt
     if L == n:
         cnt += 1
-
+        for j in range(P):
+            print(chr(res[j] + 64), end = '')
+        print()
     else:
         for i in range(1, 27):
             if code[L] == i:
