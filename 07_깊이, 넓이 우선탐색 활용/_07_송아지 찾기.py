@@ -10,3 +10,11 @@ ch[n] = 1
 dis[n] = 0
 dQ = deque()
 dQ.append(n)
+
+while dQ:
+    now = dQ.popleft()
+
+    for next in(now - 1, now + 1, now + 5):
+        if 0 < next <= MAX:
+            if ch[next] == 0:
+                dQ.append(next)
