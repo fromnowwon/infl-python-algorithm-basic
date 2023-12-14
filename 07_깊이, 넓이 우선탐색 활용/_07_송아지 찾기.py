@@ -18,3 +18,5 @@ while dQ:
         if 0 < next <= MAX:
             if ch[next] == 0:
                 dQ.append(next)
+                ch[next] = 1
+                dis[next] = dis[now] + 1
