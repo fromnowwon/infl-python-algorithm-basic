@@ -9,3 +9,7 @@ a = [list(map(int, input().split())) for _ in range(n)]
 ch = [[0] * n for _ in range(n)]
 sum = 0
 Q = deque()
+
+ch[n//2][n//2]
+Q.append((n//2, n//2))
+L = 0
