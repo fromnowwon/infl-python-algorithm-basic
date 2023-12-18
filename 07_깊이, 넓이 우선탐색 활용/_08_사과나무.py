@@ -13,3 +13,7 @@ Q = deque()
 ch[n//2][n//2]
 Q.append((n//2, n//2))
 L = 0
+
+while True:
+    if L==n//2:
+        break
