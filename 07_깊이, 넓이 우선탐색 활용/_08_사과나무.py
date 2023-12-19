@@ -17,3 +17,7 @@ L = 0
 while True:
     if L==n//2:
         break
+    size = len(Q)
+
+    for i in range(size):
+        tmp = Q.popleft()
