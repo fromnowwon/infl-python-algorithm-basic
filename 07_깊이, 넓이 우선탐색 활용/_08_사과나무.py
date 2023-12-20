@@ -21,3 +21,6 @@ while True:
 
     for i in range(size):
         tmp = Q.popleft()
+        for j in range(4):
+            x = tmp[0] + dx[j]
+            y = tmp[1] + dy[j]
