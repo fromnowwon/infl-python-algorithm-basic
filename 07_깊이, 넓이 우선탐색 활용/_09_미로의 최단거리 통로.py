@@ -11,3 +11,9 @@ dis = [[0] * 7 for _ in range(7)]
 Q = deque()
 Q.append((0, 0))
 board[0][0] = 1
+
+while Q:
+    tmp = Q.popleft()
+    for i in range(4):
+        x = tmp[0] + dx[i]
+        y = tmp[1] + dy[i]
