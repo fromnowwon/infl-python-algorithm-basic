@@ -17,3 +17,5 @@ while Q:
     for i in range(4):
         x = tmp[0] + dx[i]
         y = tmp[1] + dy[i]
+        if 0 <= x <= 6 and 0 <= y <= 6 and board[x][y] == 0:
+            board[x][y] = 1
