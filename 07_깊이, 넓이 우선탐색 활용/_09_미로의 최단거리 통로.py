@@ -20,3 +20,9 @@ while Q:
         if 0 <= x <= 6 and 0 <= y <= 6 and board[x][y] == 0:
             board[x][y] = 1
             dis[x][y] = dis[tmp[0]][tmp[1]] + 1
+            Q.append((x, y))
+
+if dis[6][6] == 0:
+    print(-1)
+else:
+    print(dis[6][6])
