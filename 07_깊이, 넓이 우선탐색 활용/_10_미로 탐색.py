@@ -8,3 +8,7 @@ def DFS(x, y):
 
 if __name__ == "__main__":
     board = [list(map(int, input().split())) for _ in range(7)]
+    cnt = 0
+    board[0][0] = 1
+    DFS(0, 0)
+    print(cnt)
