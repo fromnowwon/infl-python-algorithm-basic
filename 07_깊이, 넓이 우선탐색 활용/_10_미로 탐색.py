@@ -6,6 +6,9 @@ dy = [0, 1, 0, -1]
 def DFS(x, y):
     global cnt
 
+    if x == 6 and y == 6:
+        cnt += 1
+
 if __name__ == "__main__":
     board = [list(map(int, input().split())) for _ in range(7)]
     cnt = 0
