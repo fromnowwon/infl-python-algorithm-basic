@@ -8,6 +8,10 @@ def DFS(x, y):
 
     if x == 6 and y == 6:
         cnt += 1
+    else:
+        for i in range(4):
+            xx = x + dx[i]
+            yy = y + dy[i]
 
 if __name__ == "__main__":
     board = [list(map(int, input().split())) for _ in range(7)]
