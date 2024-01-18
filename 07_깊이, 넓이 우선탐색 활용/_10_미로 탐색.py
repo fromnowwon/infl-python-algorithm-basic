@@ -14,6 +14,8 @@ def DFS(x, y):
             yy = y + dy[i]
             if 0 <= xx <= 6 and 0 <= yy <= 6 and board[xx][yy] == 0:
                 board[xx][yy] = 1
+                DFS(xx, yy)
+                board[xx][yy] = 0
 
 if __name__ == "__main__":
     board = [list(map(int, input().split())) for _ in range(7)]
