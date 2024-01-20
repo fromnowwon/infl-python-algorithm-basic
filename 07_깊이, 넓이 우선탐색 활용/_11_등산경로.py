@@ -10,3 +10,7 @@ def DFS(x, y):
 
 if __name__ == "__main__":
     n = int(input())
+    board = [[0] * n for _ in range(n)]
+    ch = [[0] * n for _ in range(n)]
+    max = -2147000000
+    min = 2147000000
