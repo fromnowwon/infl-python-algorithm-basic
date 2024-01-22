@@ -17,3 +17,8 @@ if __name__ == "__main__":
 
     for i in range(n):
         tmp = list(map(int, input().split()))
+        for j in range(n):
+            if tmp[j] < min:
+                min = tmp[j]
+                sx = i
+                sy = j
