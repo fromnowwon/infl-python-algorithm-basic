@@ -22,3 +22,11 @@ if __name__ == "__main__":
                 min = tmp[j]
                 sx = i
                 sy = j
+
+            if tmp[j] > max:
+                max = tmp[j]
+                ex = i
+                ey = j
+
+            board[i][j] = tmp[j]
+
