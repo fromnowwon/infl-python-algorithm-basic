@@ -29,4 +29,6 @@ if __name__ == "__main__":
                 ey = j
 
             board[i][j] = tmp[j]
-
+    ch[sx][sy] = 1
+    cnt = 0
+    DFS(sx, sy)
