@@ -7,6 +7,8 @@ dy = [0, 1, 0, -1]
 def DFS(x, y):
     global cnt
 
+    if x == ex and y == ey:
+        cnt += 1
 
 if __name__ == "__main__":
     n = int(input())
