@@ -9,6 +9,10 @@ def DFS(x, y):
 
     if x == ex and y == ey:
         cnt += 1
+    else:
+        for k in range(4):
+            xx = x + dx[k]
+            yy = y + dy[k]
 
 if __name__ == "__main__":
     n = int(input())
