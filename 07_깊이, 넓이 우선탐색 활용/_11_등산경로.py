@@ -13,6 +13,8 @@ def DFS(x, y):
         for k in range(4):
             xx = x + dx[k]
             yy = y + dy[k]
+            if 0 <= xx < n and 0 <= yy < n and ch[xx][yy] == 0 and board[xx][yy] > board[x][y]:
+
 
 if __name__ == "__main__":
     n = int(input())
