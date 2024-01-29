@@ -42,3 +42,4 @@ if __name__ == "__main__":
     ch[sx][sy] = 1
     cnt = 0
     DFS(sx, sy)
+    print(cnt)
