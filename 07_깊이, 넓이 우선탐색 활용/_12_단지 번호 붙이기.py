@@ -8,3 +8,4 @@ def DFS(x, y):
 
 if __name__ == "__main__":
     n = int(input())
+    board = [list(map(int, input())) for _ in range(n)]
