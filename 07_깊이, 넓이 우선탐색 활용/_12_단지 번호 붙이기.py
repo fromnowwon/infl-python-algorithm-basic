@@ -9,3 +9,8 @@ def DFS(x, y):
 if __name__ == "__main__":
     n = int(input())
     board = [list(map(int, input())) for _ in range(n)]
+    res = []
+    for i in range(n):
+        for j in range(n):
+            if board[i][j] == 1:
+                cnt = 0
