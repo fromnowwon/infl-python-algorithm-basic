@@ -14,3 +14,4 @@ if __name__ == "__main__":
         for j in range(n):
             if board[i][j] == 1:
                 cnt = 0
+                DFS(i, j)
