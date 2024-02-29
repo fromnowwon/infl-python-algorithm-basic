@@ -15,3 +15,4 @@ if __name__ == "__main__":
             if board[i][j] == 1:
                 cnt = 0
                 DFS(i, j)
+                res.append(cnt)
