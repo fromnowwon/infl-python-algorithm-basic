@@ -5,6 +5,8 @@ dy = [0, 1, 0, -1]
 
 def DFS(x, y):
     global cnt
+    cnt += 1
+    board[x][y] = 0
 
 if __name__ == "__main__":
     n = int(input())
