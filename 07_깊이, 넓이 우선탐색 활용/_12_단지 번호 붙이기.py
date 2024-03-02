@@ -7,6 +7,8 @@ def DFS(x, y):
     global cnt
     cnt += 1
     board[x][y] = 0
+    for i in range(4):
+        xx = x + dx[i]
 
 if __name__ == "__main__":
     n = int(input())
