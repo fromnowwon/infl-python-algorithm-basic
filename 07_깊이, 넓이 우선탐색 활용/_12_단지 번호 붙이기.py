@@ -9,6 +9,7 @@ def DFS(x, y):
     board[x][y] = 0
     for i in range(4):
         xx = x + dx[i]
+        yy = y + dy[i]
 
 if __name__ == "__main__":
     n = int(input())
