@@ -11,7 +11,7 @@ def DFS(x, y):
         xx = x + dx[i]
         yy = y + dy[i]
         if 0 <= xx < n and 0 <= yy < n and board[x][y] == 1:
-
+            DFS(xx, yy)
 
 if __name__ == "__main__":
     n = int(input())
