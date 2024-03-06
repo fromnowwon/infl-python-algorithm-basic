@@ -10,7 +10,7 @@ def DFS(x, y):
     for i in range(4):
         xx = x + dx[i]
         yy = y + dy[i]
-        if 0 <= xx < n and 0 <= yy < n and board[x][y] == 1:
+        if 0 <= xx < n and 0 <= yy < n and board[xx][yy] == 1:
             DFS(xx, yy)
 
 if __name__ == "__main__":
@@ -23,3 +23,5 @@ if __name__ == "__main__":
                 cnt = 0
                 DFS(i, j)
                 res.append(cnt)
+
+    print(res)
