@@ -26,3 +26,6 @@ if __name__ == "__main__":
 
     print(len(res))
     res.sort()
+
+    for x in res:
+        print(x)
