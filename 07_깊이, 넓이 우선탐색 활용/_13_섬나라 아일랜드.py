@@ -14,3 +14,6 @@ for i in range(n):
     for j in range(n):
         if board[i][j] == 1:
             board[i][j] = 0
+            Q.append((i, j))
+            while Q:
+                tmp = Q.popleft()
