@@ -17,3 +17,6 @@ for i in range(n):
             Q.append((i, j))
             while Q:
                 tmp = Q.popleft()
+                for k in range(8):
+                    x = tmp[0] + dx[k]
+                    y = tmp[1] + dy[k]
